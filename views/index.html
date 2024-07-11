@@ -1,0 +1,63 @@
+{% extends "layout.html"%}
+
+{% block content %}
+
+<section id="intro">
+                        
+    <header id="coquinha">
+        <img src="/top_logo.png" width="120" height="90" alt="">
+    <p>
+        <strong> COQUINHA GELADA HMMMMMMMMMMMM</strong>
+    </p>
+    </header>
+
+    <section id="lore">
+        <p>
+            eu tenho 2 gatos
+        </p>
+
+        <p>
+           o migo e o tigo
+        </p>
+
+        <p>
+            <strong>se</strong> eu <strong>ficar</strong>  com tigo
+        </p>
+
+        <p>
+            <strong>você fica</strong> com migo? 
+        </p>
+
+        <p id="gatos">
+            <strong>
+                <a href="https://pbs.twimg.com/media/EWZqsCRWkAYq13F.jpg" target="_blank">📷 GATOS OFICIAL</a>
+            </strong>
+        </p>
+
+        <p id="disclaimer">DISCLAIMER: Este é um teste para um site meme da página orgulho de ter etero, 
+        com postagens baseadas em posts de páginas de orgulho masculino, mas usando elas
+        para construirem memes sem sentido.</p>
+        <p>
+    </section>
+
+    <div id="butao">
+        <button onclick="onOff()">+ Coquinha</button>
+        <a href="/lobinho"><strong>Ver Lobinhos</strong></a>
+    </div>
+
+    <footer>
+        <p id="eo">
+            <strong>
+                <a href="https://images3.memedroid.com/images/UPLOADED165/5e4a60c9a24e0.jpeg" target="_blank">📷EO OFICIAL</a>
+            </strong>
+        </p>
+    
+        <img id="fred" src="eo.jpg" width="220" alt="">
+    </footer>
+</section>
+
+<sectio id="last-meme">
+    {% include "lobinhosAll.html" %} 
+</sectio>
+
+{% endblock %}

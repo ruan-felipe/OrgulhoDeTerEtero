@@ -1,0 +1,14 @@
+{% for meme in lobinhos %}
+<div class="meme">
+    <img src="{{meme.image}}" alt="imagem de {{meme.title}}">
+
+    <div class="content">
+        <h3>{{meme.title}}</h3>
+        <p>{{meme.category}}</p>
+            <div class="description">
+                {{meme.description}}
+            </div>
+        <a href="{{meme.link}}" target="_blank">Ir para lobo</a>
+    </div>
+</div>
+{% endfor %}

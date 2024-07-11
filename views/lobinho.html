@@ -1,0 +1,38 @@
+{% extends "layout.html"%}
+
+{% set bodyID = "page-lobinho"%}
+
+
+{% block title %}
+    <title>Lobinhos - Orgulho de ter</title>
+
+{% endblock %}
+
+
+{% block content %}
+<header id="head2">
+    <a href="/">
+    <img src="/top_logo.png" width="120" height="90"alt="logo">
+
+    </a>
+
+    <nav>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="#" onclick="onOff()">Novo Lobinho</a></li>
+    </nav>
+</header>
+<section id="title">
+    <p>Em exibição</p>
+    <h1>Lobinho</h1>
+</section>
+<main>
+
+    <section id="lobinhu">
+        {% include "lobinhosAll.html" %} 
+    </section>
+
+</main>
+<footer id="rodape"> 
+    <a href="https://images3.memedroid.com/images/UPLOADED165/5e4a60c9a24e0.jpeg" target="_blank">📷 EO OFICIAL</a>  
+</footer>
+{% endblock %}

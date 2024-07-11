@@ -1,0 +1,381 @@
+body{
+    background: #e5e5e5;
+    color: #25282b; 
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; 
+
+}
+
+button{
+    color:  #cccc00 ;
+    border: none;
+    background: none;
+    font-style: initial;
+    font-weight: bold;
+    cursor: pointer;
+    outline: aqua;
+    height: 32px;
+}
+
+a{
+    text-decoration: none;
+    color: #cccc00;
+}
+
+#butao a:last-child{
+
+    font: bold;
+    margin: 0;
+
+    color:white;
+    background: #cccc00;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 128px;
+    height: 32px;
+
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px #cccc003d ;
+
+}
+
+body.hideScroll{
+    overflow: hidden;
+}
+
+body #lore #disclaimer{
+
+    text-align: justify;
+}
+
+#intro{
+    width: 300px;
+    margin-right: 32px;
+    text-align: center;
+}
+
+#lore{
+    margin: 32px 0;
+}
+
+
+#butao{
+    display: flex;
+    vertical-align: bottom;
+    justify-content: space-evenly;
+}
+
+#container{
+    width: 75%;
+    max-width: 980px; 
+    margin: 40px auto;
+    display: flex;  
+}
+
+
+
+button:hover{
+    text-decoration: underline;
+}
+
+
+#eo a{
+    color: #25252b;
+}
+
+#eo a:hover{
+    color: #cccc00;
+    font-weight: bold;
+}
+
+#gatos a:hover{
+    color: #cccc00;
+    font-weight: bold;
+}
+
+#gatos a{
+    text-decoration: none;
+    color: #25252b;
+}
+
+.meme{
+    display: flex;
+
+    margin-bottom: 32px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: justify;
+    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.5);
+    background-color: white;
+}
+
+#last-meme{
+    max-width: 580px;
+}
+
+.meme img{
+    width: 180px;
+    height: 180px;
+    
+}
+
+.meme p{
+    margin: 8px 0;
+    margin-left: 16px;
+    color: #777777;
+}
+
+.meme .description{
+    margin: 16px;
+}
+
+.meme h3{
+    margin: 0 16px;
+}
+
+.meme a{
+    color: #cccc00;
+    text-decoration: none;
+    margin-left: 16px;
+
+}
+
+.description{
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+
+/* ---MODAL--- */
+
+
+#modal{
+    background: #cccc00;
+  
+    position: fixed;
+    top: 0;
+    
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 300ms;
+}
+
+#modal.addScroll{
+    overflow: auto;
+}
+
+#modal .content{
+    margin-top: 5%;
+    
+    color: white;
+    
+}
+
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+#modal form{
+    max-width: 800px;
+    width: 80%;
+    margin: 0% auto 5%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4), 
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+form input, form textarea{
+    width: 100%;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid rgba(141, 25, 52, 0.2);
+
+    outline: none;
+    font-size: 16px;
+
+}
+
+form label{
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+
+}
+
+form a{
+
+
+    width: 150px;
+    height: 40px;
+
+    background-color: #ffffff33;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+
+
+    border-radius: 6px;
+
+    align-self: flex-end;
+    transition: 300ms;
+}
+
+form a:hover{
+    background: #fff;
+    color: #cccc00;
+
+    text-decoration: none;
+
+}
+
+form button{
+    background: white;
+    transition: 300ms;
+
+    width: 150px;
+    height: 40px;
+    
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    margin-top: 16px;
+    grid-column: 2;
+    justify-self: end;
+
+}
+
+form button:hover{
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+
+}
+
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hide{
+    display: none;
+}
+
+/* ---lobinho.html--- */
+
+#page-lobinho #container{
+    display: block;
+}
+
+#page-lobinho header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-lobinho nav{
+    display: flex;
+    align-items: center;
+}
+
+#page-lobinho nav li{
+    list-style-type: none;
+    margin-right: 16px;
+}
+#page-lobinho nav li a{
+    color: #25282b;
+    text-decoration: none;
+
+}
+
+#page-lobinho nav li:last-child{
+    margin: 0;
+
+    width: 150px;
+    height: 40px;
+
+    background-color: #cccc00;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+}
+
+#page-lobinho nav li:last-child:hover{
+    background-color: teal;
+    
+    
+}
+#page-lobinho nav li:last-child a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+section#title{
+    text-align: center;
+
+}
+section#title p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+section#title h1 {
+    font-size: 28px;
+}
+
+section#lobinhu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section#lobinhu .meme{
+    margin: 0;
+}
+
+section#title,
+footer,
+section#meme{
+    margin-top: 16px;
+    font-weight: 800;
+}
+
+#rodape{
+    text-align: center;
+}
